@@ -33,6 +33,25 @@ input[type="text"] {
   font-weight: bold;
   color: #212121
 }
+input[type="password"] {
+  display: block;
+  text-align: center;
+  margin: 5px auto;
+  padding: 5px;
+  fonT: bold 16px propia;
+  font-weight: bold;
+  color: #212121
+}
+input[type="email"] {
+  display: block;
+  text-align: center;
+  margin: 5px auto;
+  padding: 5px;
+  fonT: bold 16px propia;
+  font-weight: bold;
+  color: #212121
+}
+
 input[type="checkbox"]{
 	text-align: center;
 	color: #C5CAE9;
@@ -40,11 +59,22 @@ input[type="checkbox"]{
 	padding: 5px;
 	font: bold 16px propia;
 }
+input[type="submit"]{
+  text-align: center;
+  font: bold 14px propia;
+	background-color: #FF9800;
+	color: #FFFFFF;
+	display: inline-block;
+}
 input[type="button"]{
   text-align: center;
   font: bold 14px propia;
 	background-color: #FF9800;
 	color: #FFFFFF;
+	display: inline-block;
+}
+form{
+	display: inline-block;
 }
 footer {
   text-align: center;
@@ -116,7 +146,21 @@ ul.blanco{
 	font: bold 16px propia;
 	color: #212121;
 	background: white;
-	padding: 75px;
+	padding: 15px;
+	width: 95%;
+}
+#mensajeNuevo{
+  margin: auto;
+  display: block;
+  width: 95%;
+  min-width: 95%; 
+  height: 7em;
+  max-height: 7em;
+  max-width: 95%;
+  padding: 15px;
+  font-size: 16px;
+  background: #FFFFFF;
+  color: #212121;
 }
 .Publicacion header{
   text-align: left;
@@ -202,4 +246,12 @@ ul.blanco{
 }
 section.opciones{
 	text-align: center;
+}
+div #error {
+	background: red;
+	font: 15px solid white;
+}
+div #incompleto {
+	background: red;
+	font: 15px solid white;
 }

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="keywords" content="Registro, Cuenta, Acceder">
     <meta name="DESCRIPTION" content="Registro de la cuenta">
+    <script type="text/javascript"  src="CodigoRegistro.js"></script>
     <title> Registrar </title>
       <link rel="StyleSheet" href="Estilo.css">
   </head>
@@ -14,15 +15,19 @@
       </header>
         <section>
               <input type = "text" placeholder = "Usuario"/>
-              <input type = "text" placeholder = "E-Mail"/>
-			        <input type = "text" placeholder = "Clave"/>
+              <input type = "email" placeholder = "E-Mail"/>
+			        <input type = "password" placeholder = "Clave"/>
+              <input type="password" placeholder="Confirmar Clave">
 				<footer class = "registro">
-        </br>
-            <input type = "checkbox" name="Si-no" checked value="1" /> Acepto términos de usos
+            </br>
+                <input type = "checkbox" name="aceptar" value="1" /> Acepto términos de usos
             </br>
             </br>
-						<input type = "button" value = "Registrar" />
+                <form method="post" action="Inicio.HTML">
+						        <input type = "submit" value = "Registrar" />
+                </form>
 				</footer>
+                <div id="incompleto"> </div>
 		</section>
   </div>
 </body>

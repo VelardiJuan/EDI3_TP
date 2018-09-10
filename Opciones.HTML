@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="keywords" content= "Opciones, Cambiar, Change">
     <meta name="DESCRIPTION" content="Lista de opciones">
+    <script type="text/javascript"  src="CodigoOpciones.js"></script>
     <title> Opciones </title>
       <link rel="StyleSheet" href="Estilo.css">
   </head>
@@ -23,12 +24,16 @@
       </nav>
       <section>
           <input type = "text" placeholder = "Usuario" />
-          <input type = "text" placeholder = "E-Mail" />
-          <input type = "text" placeholder = "Clave" />
+          <input type = "email" placeholder = "E-Mail" />
+          <input type = "password" placeholder = "Clave" />
+          <input type="password" placeholder="Confirmar Clave">
       <footer>
       </br>
-          <input type = "button" value = "Guardar">
+          <form method="post" action="Inicio.HTML">
+                <input type = "submit" value = "Guardar">
+          </form>
       </footer>
+      <div id="incompleto"> </div>
       <section>
   </div>
 </body>

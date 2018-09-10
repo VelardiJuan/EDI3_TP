@@ -1,9 +1,10 @@
-<!Doctype HTML>
+﻿<!Doctype HTML>
 <HTML lang = "ES">
   <head>
     <meta charset="utf-8">
     <meta name="keywords" content="Ingresar, Loguear, Acceder">
     <meta name="DESCRIPTION" content="Inicio de sesión">
+    <script type="text/javascript"  src="Codigo.js"></script>
     <title> LogIn </title>
       <link rel="StyleSheet" href="Estilo.css">
   </head>
@@ -14,11 +15,16 @@
       </header>
         <section>
               <input type = "text" placeholder = "Usuario"/>
-              <input type = "text" placeholder = "Clave"/>
+              <input type = "password" placeholder = "Clave"/>
 				<footer>
-                  <input type = "button" value = "Ingresar" />
-                  <input type = "button" value = "Registrarse" />
+              <form method="post" action="Inicio.HTML">
+                <input type = "submit" value = "Ingresar">
+              </form>
+              <form method="post" action="Registrar.HTML">
+                <input type = "submit" value = "Registrar">
+              </form>
 				</footer>
+        <div id="error"> </div>
         </section>
     </div>
   </body>
