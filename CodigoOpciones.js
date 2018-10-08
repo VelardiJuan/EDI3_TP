@@ -19,6 +19,7 @@ function validarBtn(){
          		text.innerHTML += "<p>Los campos no pueden ser vacíos</p>";
                 cont = 1;
      		}
+				else {
      		for (var i = 0; i < usuario.length; i++) {
      			if (usuario[i] == " ") {
      				cont = 2;
@@ -41,9 +42,10 @@ function validarBtn(){
           		cont = 1;
           	}
           	if (resultadoE != true){
-          		text.innerHTML += "<p>El Email ingresado es invalido</p>";
+          		text.innerHTML += "<p>El Email ingresado no es válido</p>";
           		cont=1;
           	}
+						}
             if (cont == 1){
                 event.preventDefault();
             }

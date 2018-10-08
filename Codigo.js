@@ -16,6 +16,9 @@ function validarUC(event){
          		texto1.innerHTML += "<p>Los campos no pueden ser vacíos</p>";
                 cont = 1;
      		}
+				else {
+
+
      		if (password.indexOf(user) > -1){
         		texto1.innerHTML += "<p>El usuario no puede formar parte de la contraseña</p>";
         		cont = 1;
@@ -24,6 +27,7 @@ function validarUC(event){
 				texto1.innerHTML += "<p>La clave debe tener un mínimo de 6 caracteres con un número, letra minúscula y letra mayúscula</p>";
 				cont=1;
           	}
+				}
             if (cont == 1){
                 event.preventDefault();
             }
